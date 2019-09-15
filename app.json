@@ -1,0 +1,23 @@
+{
+  "name": "StaticMan",
+  "description": "Static sites with superpowers",
+  "repository": "https://github.com/rasteron/staticman",
+  "logo": "https://github.com/eduardoboucas/staticman/raw/master/logo.png",
+  "keywords": ["node", "express", "static"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],  
+  "env": {
+    "NODE_ENV": {
+      "value": "production"
+    },    
+    "GITHUB_TOKEN": {
+      "description": "GitHub Access Token."
+    },
+    "RSA_PRIVATE_KEY": {
+      "description": "RSA key created by openssl genrsa -out key.pem"
+    }    
+  }  
+}
